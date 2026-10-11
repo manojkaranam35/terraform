@@ -9,7 +9,7 @@ provisioner "local-exec" {
   }
 }
 
-resource "aws_security_group" "allow_all" {
+resource "aws_security_group" "allow_more" {
     name        = var.sg_name
     description = var.sg_description
 
