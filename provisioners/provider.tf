@@ -6,7 +6,6 @@ terraform {
     }
   }
 
-
   backend "s3" {
     bucket = "terraform-remote-state"
     key    = "remote-state-demo"
@@ -18,5 +17,5 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  # Configuration options
 }
