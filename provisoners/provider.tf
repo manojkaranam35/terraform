@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "provisoners-remote-state"
+    bucket = "terraform-remote-state"
     key    = "provisioner-remote"
     region = "us-east-1"
     #dynamodb_table= "12pm-remote-state-lock"
