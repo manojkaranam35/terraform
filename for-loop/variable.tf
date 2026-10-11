@@ -6,10 +6,9 @@ variable "ami_id" {
 }
 
 
-variable "instance_type" {
-    default = "t3.micro"
+ #variable "instance_type" {
+    #default = "t3.micro"
   
-}
 
 variable "instances" {
     default =  {
@@ -17,8 +16,7 @@ variable "instances" {
         redis = "t3.micro"
         mysql = "t3.small"
         rabbitmq = "t3.micro"
-    }
-  
+  }
 }
 
 variable "ec2_tags" {
