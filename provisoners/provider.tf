@@ -6,15 +6,15 @@ terraform {
     }
   }
 
-  backend "s3" {
-    bucket = "terraform-remote-state"
-    key    = "provisioner-remote"
-    region = "us-east-1"
-    #dynamodb_table= "12pm-remote-state-lock"
-    encrypt       = true
-    use_lockfile  = true
-  }
-}
+#   backend "s3" {
+#     bucket = "terraform-remote-state"
+#     key    = "provisioner-remote"
+#     region = "us-east-1"
+#     #dynamodb_table= "12pm-remote-state-lock"
+#     encrypt       = true
+#     use_lockfile  = true
+#   }
+# }
 
 provider "aws" {
   # Configuration options
