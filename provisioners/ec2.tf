@@ -1,7 +1,7 @@
 resource "aws_instance" "roboshop" {
     ami = var.ami_id
     instance_type = var.instance_type
-    vpc_security_group_ids = [aws_secrity_group.allow_more.id]
+    vpc_security_group_ids = [aws_security_group.allow_more.id]
     tags = var.ec2_tags
 
 provisioner "local-exec" {
