@@ -5,6 +5,7 @@ terraform {
       version = "5.98.0"
     }
   }
+}
 
 #   backend "s3" {
 #     bucket = "terraform-remote-state"
@@ -17,5 +18,5 @@ terraform {
 # }
 
 provider "aws" {
-  # Configuration options
+  region = "us-east-1"
 }
