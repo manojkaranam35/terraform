@@ -1,13 +1,13 @@
 variable "project" {
-    default = roboshop
+    default = "roboshop"
 }
 
 variable "environment" {
-    default = dev
+    default = "dev"
 }
 
 variable "component" {
-    default = cart
+    default = "cart"
 }
 
 variable "common_tags" {
