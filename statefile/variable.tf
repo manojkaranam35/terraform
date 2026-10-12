@@ -44,3 +44,7 @@ variable "sg_tags" {
         Name = "allow-all-1"
     }
 }
+
+variable "instance" {
+    default = ["mongodb", "redis"]
+}
